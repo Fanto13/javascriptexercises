@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta neme="description" content="questo è un sito di prova" />
+    <meta name="author" content="Federico" />
+    <meta name="keywords" content="html,css,php" />
+
+    <title>Ciao sono un titolo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Il mio blog</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Chi sono</li>
+        <li>Contatti</li>
+      </ul>
+    </nav>
+    <!--fine navigazione-->
+    <main>
+      <section>
+        <!--inizio articoli-->
+        <article>
+          <h1>Titolo articolo</h1>
+          <h2>Sottotitolo</h2>
+          <a href="/html/about.html">
+            <img
+              src="https://picsum.photos/200/300"
+              width="199"
+              height="299"
+              alt="immagine che cambia sempre"
+            />
+            <br />
+            <button>Scopri l'autore</button>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed labore
+            enim placeat <b>aspernatur</b> facere aperiam quam libero
+            perferendis quae et eius modi aliquam iure ad similique saepe, quod
+            error quas. ipsum dolor sit amet consectetur adipisicing elit.
+            Nesciunt ullam necessitatibus enim at laudantium et mollitia
+            possimus ducimus, quo vero placeat odio, tenetur facilis incidunt
+            modi libero iste, corporis sint?
+          </p>
+          <!--può non essere esclusivo della fine della pagina -->
+          <footer>
+            <cite>
+              <blockquote cite="google.it">
+                <q> il latino è inutile</q>
+              </blockquote>
+            </cite>
+            <time datetime="28-08-2023">28 agosto 2023</time>
+          </footer>
+        </article>
+        <!--hr fa una linea di separazione-->
+        <hr />
+        <article>
+          <!--hgroup è deprecato-->
+          <hgroup>
+            <h1>Titolo articolo 2</h1>
+            <h2>Sottotitolo 2</h2>
+          </hgroup>
+          Lorem ipsum <cite>dolor sit amet consectetur</cite> adipisicing elit.
+          Sequi, iste!
+        </article>
+      </section>
+      <!--più è piccolo il numero più è importante-->
+      <h6>Ciao sono una intestazione h6</h6>
+      <section>
+        <p>Questo è un paragrafo</p>
+        <p>Ciao sono un paragrafo</p>
+      </section>
+      <br />
+      <br />
+      <!--fine articoli 1 -->
+      <article>
+        <h1>Titolo articolo</h1>
+        <h2>Sottotitolo</h2>
+        <img
+          src="https://picsum.photos/id/44/200/300"
+          width="199"
+          height="299"
+          alt="immagine che cambia sempre"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed labore
+          enim placeat <b>aspernatur</b> facere aperiam quam libero perferendis
+          quae et eius modi aliquam iure ad similique saepe, quod error quas.
+          ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam
+          necessitatibus enim at laudantium et mollitia possimus ducimus, quo
+          vero placeat odio, tenetur facilis incidunt modi libero iste, corporis
+          sint?
+        </p>
+        <!--può non essere esclusivo della fine della pagina -->
+        <footer>
+          <cite>
+            <blockquote cite="google.it">
+              <q> il latino è inutile</q>
+            </blockquote>
+          </cite>
+          <time datetime="28-09-2024">29 settembre 2024</time>
+          <a href="about.html" target="_blank">link alla pagina dell'autore</a>
+        </footer>
+      </article>
+    </main>
+    <br />
+
+    <!--l'hr serve per fare la riga orizzontale-->
+    <hr />
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>Cognome</th>
+          <th>Indirizzo</th>
+          <th>Telefono</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rossi</td>
+          <td>via roma</td>
+          <td>3333333333</td>
+          <td class="email">mail@mail</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <aside>
+      <div>
+        <article>
+          <small>scopri i nostri prodotti</small>
+          <details>
+            <summary>Latino, le novità</summary>
+            <article>Lorem, ipsum dolor.</article>
+          </details>
+        </article>
+        <br />
+        <h4>Iscriviti alla nostra newsletter</h4>
+        <form>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="inserisci mail"
+          />
+          <br />
+          <input
+            type="checkbox"
+            id="policies"
+            name="policies"
+            value="1"
+            required
+          />
+          <label for="policies">Accetto le politiche sulla privacy</label>
+          <br />
+          <button type="submit">Iscriviti</button>
+        </form>
+      </div>
+    </aside>
+    <br />
+    <footer>
+      <ul>
+        <li>Numeri di telefono 666</li>
+        <li>Email</li>
+        <li>FAQ</li>
+      </ul>
+      <small>diritti riservati &copy; Federico</small>
+    </footer>
+  </body>
+</html>

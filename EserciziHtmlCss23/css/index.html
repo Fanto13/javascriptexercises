@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="questo è il mio primo sito" />
+    <meta name="author" content="@" />
+    <meta
+      name="keywords"
+      content="sono una intestazione, bel paragrafo, sottotitolo"
+    />
+    <link rel="stylesheet" href=/css/styles/index.css /> <link rel="stylesheet"
+    href=/css/styles/main.css />
+    <title>Il Primo Blog</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="titolo">Il Mio Blog</h1>
+      <h2 class="sottotitolo" id="best-blog-caption">
+        Il Miglior blog di articoli
+      </h2>
+    </header>
+    <!-- INIZIO BARRA DI NAVIGAZIONE -->
+    <nav>
+      <ul id="nav-list">
+        <li>Home</li>
+        <li>Contatti</li>
+        <li>
+          <a href="about.html" class="link"> About </a>
+        </li>
+      </ul>
+    </nav>
+    <!--FINE NAVIGAZIONE-->
+    <br />
+    <br />
+    <main>
+      <section>
+        <div class="container">
+          <div class="items" style="order: 5; flex: 1 5 50px">A</div>
+          <div class="items" style="order: 3; flex: 1 5 50px">B</div>
+          <div class="items items-c" style="order: 1; flex: 1 5 50px">
+            <h6>Yo</h6>
+            <p>Yo Yo</p>
+          </div>
+          <div class="items" style="order: 4; flex: 1 5 50px">D</div>
+          <div class="items" style="order: 6; flex: 1 5 50px">E</div>
+          <div class="items" style="order: 2; flex: 1 5 50px">F</div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-items">1</div>
+          <div class="grid-items">2</div>
+          <div class="grid-items">3</div>
+          <div class="grid-items">4</div>
+          <div class="grid-items">5</div>
+          <div class="grid-items">6</div>
+        </div>
+        <!--INIZIO ARTICOLI-->
+        <article class="post-container" id="post-1">
+          <h3 class="post-title">Titolo 1</h3>
+          <h4 class="post-subtitle">Sottotitolo 1</h4>
+          <a href="about.html">
+            <img
+              class="img"
+              src="https://img.freepik.com/free-vector/dotted-background-full-color_1017-4272.jpg?w=826&t=st=1703874969~exp=1703875569~hmac=32e4917b3f339cb3cc78826385e6b31f15705f6f76999aaf1d2d6e994b498427"
+              alt="logo"
+            />
+          </a>
+          <p class="post-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+            sapiente suscipit totam nemo <b>sed corporis</b> rerum sit earum,
+            ipsam officiis, dolorum, quos incidunt?
+            <cite> Aperiam ad doloremque ipsum </cite>
+            cum odit.
+          </p>
+          <footer>
+            <cite>
+              <blockquote cite="google.it">
+                <q> Il Latino è super utile. WOW </q>
+              </blockquote>
+            </cite>
+            <time datetime="23-01-2021"> 23 Giugno 2021</time>
+            <a href="google.it" target="_blank">
+              <button>Scopri l'autore</button>
+            </a>
+          </footer>
+        </article>
+
+        <br />
+
+        <hr />
+        <article class="post-container" id="post-2">
+          <h3 class="post-title">Titolo 1</h3>
+          <h4 class="post-subtitle">Sottotitolo 1</h4>
+          <a href="about.html">
+            <img
+              src="images/logo-h4l.png"
+              width="200"
+              height="200"
+              alt="logo"
+            />
+          </a>
+          <p class="red-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+            sapiente suscipit totam nemo <b>sed corporis</b> rerum sit earum,
+            ipsam officiis, dolorum, quos incidunt?
+            <cite> Aperiam ad doloremque ipsum </cite>
+            cum odit.
+          </p>
+          <footer>
+            <cite>
+              <blockquote cite="google.it">
+                <q> Il Latino è super utile. WOW </q>
+              </blockquote>
+            </cite>
+            <time datetime="23-01-2021"> 23 Giugno 2021</time>
+            <a href="google.it" target="_blank">
+              <button>Scopri l'autore</button>
+            </a>
+          </footer>
+          <footer>
+            <cite>
+              <blockquote cite="google.it">
+                <q> Il Latino è super utile. WOW </q>
+              </blockquote>
+            </cite>
+            <time datetime="23-01-2021"> 23 Giugno 2021</time>
+          </footer>
+        </article>
+      </section>
+
+      <br />
+      <hr />
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th colspan="2">Anagrafica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dario</td>
+            <td>Eta: 1</td>
+            <td>Peso 70</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <br />
+    <br />
+    <!--FINE ARTICOLI-->
+    <aside>
+      <div>
+        <article>
+          <small> Scopri i Nostri ultimi articoli </small>
+          <details>
+            <summary>Latino, Le novità</summary>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              culpa porro, rem delectus, quos enim ex at ut labore sit quas!
+            </article>
+          </details>
+        </article>
+        <br />
+        <h4>Iscriviti alla nostra news Letters</h4>
+        <form>
+          <label for="email"> Inserisci Mail </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="inserisci mail"
+          />
+          <div>
+            <label for="policies"> Accetto il Trattamento dei dati </label>
+            <input type="checkbox" />
+          </div>
+          <button type="submit" class="submit-btn">Iscriviti</button>
+        </form>
+      </div>
+    </aside>
+    <footer>
+      <ul>
+        <li>Numeri di telefono: 9999</li>
+        <li>FAQ</li>
+        <li>Dove Siamo?</li>
+        <li>Aperti 7/7 dalle 9.00 alle 19</li>
+      </ul>
+      <small> Diritti riservati &copy; del mio blog </small>
+    </footer>
+  </body>
+</html>

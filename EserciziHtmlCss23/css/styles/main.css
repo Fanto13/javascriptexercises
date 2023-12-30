@@ -1,0 +1,190 @@
+body {
+  background-color: #efefef;
+  text-align: justify;
+  font-size: 1.25em;
+  font-family: "montserrat", sans-serif;
+  /* background-image :url("https://img.freepik.com/free-vector/dotted-background-full-color_1017-4272.jpg?w=826&t=st=1703874969~exp=1703875569~hmac=32e4917b3f339cb3cc78826385e6b31f15705f6f76999aaf1d2d6e994b498427");;  */
+}
+/* un em è uguale alla dimensione del font, un rem è uguale alla dimensione del font del root element (cioè l'elemento padre di tutti gli elementi html, il body) */
+
+/*colors.co per generare palette di colori*/
+
+/* .red-text{
+    color: rgb(76, 27, 209);
+    font-size: 20px;
+    opacity: 0.5;
+} */
+
+.titolo {
+  color: rgb(142, 84, 218);
+}
+
+.post-title {
+  color: #1c191d;
+}
+
+.post-subtitle {
+  color: #2f2c30;
+  font-weight: 500;
+}
+
+.post-paragraph {
+  color: #797479;
+  line-height: 1.6;
+  letter-spacing: 0.06rem;
+  max-width: 60ch;
+  text-transform: lowercase;
+  font-style: italic;
+}
+/* le unità di misura sono: px, em, rem, %, vw, vh, vmin, vmax */
+.bg-image {
+  height: 360px;
+  width: 720px;
+  /* background: linear-gradient(289deg, red, pink, blue); */
+  background-image: radial-gradient(circle, steelblue 33%, pink 26%, red 90%);
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.img {
+  height: 400px;
+  width: 60%;
+  border-radius: 89px;
+  /* il primo valore è il top, il secondo il right, il terzo il bottom, il quarto il left */
+  padding: 20px 50px;
+  margin: 100px 30px;
+  border: 10px dotted;
+  float: left;
+}
+
+time {
+  display: block;
+}
+
+table {
+  opacity: 0.8;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 300px;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.items {
+  color: white;
+  width: 20px;
+  background-color: rgb(5, 99, 60);
+  margin: 10px;
+  padding: 12px 15px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.items-c {
+  display: flex;
+  gap: 60;
+  align-items: center;
+}
+
+.grid-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  max-height: 200px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50px 200px 120px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-content: space-between;
+  gap: 20px;
+}
+
+.grid-items {
+  color: black;
+
+  padding: 18px 36px;
+  font-size: 1.3em;
+}
+
+.grid-container .grid-items:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+}
+.grid-container .grid-items:nth-child(2) {
+  background-color: rgb(24, 80, 19);
+}
+.grid-container .grid-items:nth-child(3) {
+  background-color: rgb(40, 62, 187);
+}
+.grid-container .grid-items:nth-child(4) {
+  background-color: rgb(181, 133, 235);
+}
+.grid-container .grid-items:nth-child(5) {
+  background-color: rgb(109, 55, 106);
+}
+.grid-container .grid-items:nth-child(6) {
+  background-color: rgb(98, 99, 151);
+}
+
+/* la funziona nth child prende il primo elemento di un genitore*/
+.container .items:nth-child(4) {
+  line-height: 100px;
+}
+
+/* prende i bottoni di tipo submit */
+button[type="submit"] {
+  background-color: teal;
+  color: white;
+  padding: 0.825rem 2.5rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  margin: 16px 0px;
+  cursor: pointer;
+  transition: all 175ms ease 1s;
+  transform: skew(-10deg);
+}
+
+.submit-btn:hover {
+  background-color: tomato;
+  padding: 1rem 2.3rem;
+}
+/* questo va a prendere l'id corrispondente */
+#header {
+  opacity: 0;
+  animation: fadeInFromRight 750ms ease-out 1s 1 normal forwards;
+  transform: translateX(400px);
+  /* animation: fadeInFromRight;
+    animation-duration: 2;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    transform: translateX(400px); */
+}
+/* definisce l'animazione */
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

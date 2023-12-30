@@ -1,0 +1,80 @@
+/*la classe ha una gerarchia più alta e i'id ha una gerarchia ancora più alta del paragrafo, 
+in generale viene interpretato dall'alto verso il basso, il contenuto dopo sovrascrive quello prima
+l'inline ha una ancora più alta gerarchia, quindi se si vuole sovrascrivere un inline bisogna usare !important */
+
+body {
+  background-color: unset;
+}
+/* applica indistintamente a tutti i paragrafi il colore verde */
+p {
+  color: green;
+}
+
+/*la classe (.) può essere ripetuta, mentre l'id (#) no*/
+.red-text {
+  color: red;
+}
+/*quando ci si passa sopra con il mouse*/
+#best-blog-caption:hover {
+  color: red;
+  font-size: 30px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+/* frist-child è un selettore che prende il primo elemento di un genitore */
+li:first-child {
+  color: rgb(0, 255, 213);
+}
+/* ultimo elemento */
+li:last-child {
+  color: purple;
+}
+/* secondo elemento */
+li:nth-child(2) {
+  color: rgb(66, 119, 16);
+}
+/* mostrano un colre differente a seconda se l'utente ha cliccato o no sul link */
+a:link {
+  color: green;
+}
+a:visited {
+  color: peru;
+}
+/* vale solo se un h1 è seguito da un h2 */
+h1 + h2 {
+  color: rgb(150, 18, 95);
+}
+/* se fanno parte della stessa parentela */
+h1 ~ h2 {
+  color: rgb(62, 11, 75);
+}
+/* se sono direttamente figli di nav-list */
+#nav-list > li {
+  color: rgb(255, 0, 0);
+}
+/* se sono discendenti di nav-list vengono selezionati */
+#nav-list li {
+  color: rgb(12, 253, 173);
+}
+/* questo vale per tutti i discendenti dentro ordered list */
+#nav-list li > a {
+  color: rgb(34, 8, 68);
+}
+/* so va a specificare l'attributo */
+h1[name="titolo"] {
+  color: burlywood;
+}
+/* l'attributo inizia con images */
+img[src^="images/"] {
+  border: 2px solid black;
+}
+/* finisce per */
+img[src$=".png"] {
+  border-radius: 50%;
+}
+/* contiene una certa stringa */
+img[src*="logo"] {
+  border-color: royalblue;
+}
